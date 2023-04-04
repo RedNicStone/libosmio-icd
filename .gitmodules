@@ -1,0 +1,9 @@
+[submodule "external/libosmio-headers"]
+	path = external/libosmio-headers
+	url = https://github.com/RedNicStone/libosmio-headers
+[submodule "platform/arduino/external/ArduinoCore-API"]
+	path = platform/arduino/external/ArduinoCore-API
+	url = https://github.com/arduino/ArduinoCore-API
+[submodule "platform/arduino-avr/external/ArduinoCore-avr"]
+	path = platform/arduino-avr/external/ArduinoCore-avr
+	url = https://github.com/arduino/ArduinoCore-avr/
