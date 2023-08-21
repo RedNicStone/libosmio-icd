@@ -3,8 +3,7 @@
 //
 
 #include <libosmio-loader/entrypoint.h>
-#include <>
 
-void os_icdGetGlobalDispatchTable(Os_icdGlobalDispatchTable** ppDispatchTable) {
+extern "C" void os_icdGetGlobalDispatchTable(Os_icdGlobalDispatchTable** ppDispatchTable) {
     ppDispatchTable = nullptr;
 }
