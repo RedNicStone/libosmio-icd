@@ -20,10 +20,10 @@ set(${PLATFORM_NAME}_ICD_INSTALL_LOCATION
         "Where ${PLATFORM_NAME} icd library object is stored")
 
 set(${PLATFORM_NAME}_ICD_CONFIG_LOCATION
-        "$ENV{HOME}/.local/share/osmio/icd.d/${PLATFORM_NAME}.json" CACHE FILEPATH
+        "$ENV{HOME}/.local/share/osmio/icd.d" CACHE FILEPATH
         "Where ${PLATFORM_NAME} icd config file is stored")
 
-set(ICD_INSTALL_LOCATION ${${PLATFORM_NAME}_ICD_INSTALL_LOCATION})
+set(ICD_INSTALL_LOCATION ${${PLATFORM_NAME}_ICD_INSTALL_LOCATION}/libosmio-icd-${PLATFORM_NAME}.so)
 set(ICD_API_VERSION "1.0.0")
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.json.in ${CMAKE_CURRENT_BINARY_DIR}/config.json)
 
