@@ -14,13 +14,21 @@ if(GIT_FOUND AND EXISTS "${CMAKE_SOURCE_DIR}/.git")
     endif()
 endif()
 
-#==================== Libosmio ====================#
+#==================== libosmio-headers ====================#
 
-if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/libosmio-headers/CMakeLists.txt")
+#if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/libosmio-headers/CMakeLists.txt")
+#    message(FATAL_ERROR "The libosmio-headers submodule was not downloaded! GIT_SUBMODULE was turned off or failed. Please update submodules and try again.")
+#endif()
+
+#add_subdirectory(libosmio-headers)
+
+#==================== libosmio-loader ====================#
+
+if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/libosmio-loader/CMakeLists.txt")
     message(FATAL_ERROR "The libosmio-headers submodule was not downloaded! GIT_SUBMODULE was turned off or failed. Please update submodules and try again.")
 endif()
 
-add_subdirectory(libosmio-headers)
+add_subdirectory(libosmio-loader)
 
 #==================== AVR ====================#
 
